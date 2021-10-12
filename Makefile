@@ -6,11 +6,11 @@
 #    By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 13:38:20 by gudias            #+#    #+#              #
-#    Updated: 2021/10/11 17:52:16 by gudias           ###   ########.fr        #
+#    Updated: 2021/10/12 19:01:44 by gudias           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS =
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c
 OBJS = ${SRCS:.c=.o}
 HEADER = libft.h
 CC = gcc

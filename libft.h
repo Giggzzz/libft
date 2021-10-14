@@ -14,7 +14,8 @@
 # define LIBFT_H
 #include<stddef.h>
 
-//FONCTIONS SUPPL.
+//FONCTIONS SUPPL
+int	ft_isspace(int c); //nt
 
 // P1
 int		ft_isalpha(int c);
@@ -23,11 +24,11 @@ int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
-void*	memset(void *str, int c, size_t len);
- /* bzero
- * memcpy
- * memmove
- * strlcpy
+void*	ft_memset(void *str, int c, size_t len); //no tests
+void	ft_bzero(void *str, size_t len); //no tests
+//void*	ft_memcpy(void *dst, const void *src, size_t len); //nt
+//void*	ft_memmove(void *dst, const void *src, size_t len); //nt
+/* strlcpy
  * strlcat
  */
 int		ft_toupper(int c);
@@ -37,9 +38,9 @@ int		ft_tolower(int c);
  * strncmp
  * memchr
  * memcmp
- * strnstr
- * atoi
- * calloc
+ * strnstr*/
+int	ft_atoi(const char *str); //nt
+/* calloc
  * strdup
  */
  

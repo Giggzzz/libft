@@ -10,7 +10,18 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_toupper.c ft_tolower.c ft_memset.c
+SRCS = ft_isalpha.c \
+	ft_isdigit.c \
+	ft_isalnum.c \
+	ft_isascii.c \
+	ft_isprint.c \
+	ft_strlen.c \
+	ft_toupper.c \
+	ft_tolower.c \
+	ft_memset.c \
+	ft_bzero.c \
+	ft_isspace.c \
+	ft_atoi.c
 OBJS = ${SRCS:.c=.o}
 HEADER = libft.h
 CC = gcc
@@ -18,7 +29,7 @@ CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
 .c.o:
-		${CC} ${CFLAGS} -I ${HEADER} -c $< -o ${<:.c=.o}
+		${CC} ${CFLAGS} -I . -c $< -o ${<:.c=.o}
 
 all: ${NAME}
 

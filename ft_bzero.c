@@ -1,11 +1,11 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/13 17:19:07 by gudias            #+#    #+#             */
+/*   Created: 2021/10/13 17:32:07 by gudias            #+#    #+#             */
 /*   Updated: 2021/10/13 17:58:44 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -14,24 +14,23 @@
 //#include<stdio.h>
 //#include<string.h>
 
-void*	ft_memset(void *str, int c, size_t len)
+void	ft_bzero(void *str, size_t len)
 {
 	size_t	i;
 
 	i = 0;
 	while (i < len)
 	{
-		((unsigned char*)str)[i] = c;
+		((unsigned char*)str)[i] = '\0';
 		i++;
 	}
-	return (str);
 }
-/*
-int	main(void)
+
+/*int	main(void)
 {
 	char str[] = "bli bla blu";
-	char *s2;	
-	s2 = ft_memset(str, 48, 3);
+	printf("%s\n", str);	
+	ft_bzero(str, 3);
 	printf("%s\n", str);
 	return (0);
 }*/

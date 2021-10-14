@@ -25,7 +25,7 @@ void	test_isalpha()
     printf("------------------------\n");
     while(i < 6)
     {
-        /*if (ft_isalpha(tests[i]))
+       /* if (ft_isalpha(tests[i]))
             printf("%d (%c) is alpha\n", tests[i], tests[i]);
         else
             printf("%d (%c) is not alpha\n", tests[i], tests[i]);
@@ -34,7 +34,8 @@ void	test_isalpha()
         else
             printf("%d (%c) is not alpha (ORIGINAL)\n", tests[i], tests[i]);
         i++;*/
-        printf("TEST %d: %d (%c) --> ", i, tests[i], tests[i]);
+
+       printf("TEST %d: %d (%c) --> ", i, tests[i], tests[i]);
         if (ft_isalpha(tests[i]) == isalpha(tests[i]))
             printf("OK\n");
         else
@@ -175,6 +176,14 @@ void    test_tolower()
         i++;
     }
 }
+
+/*void	test_memset()
+{
+	printf("------------------------\n");
+	printf("TESTING FT_MEMSET\n");
+	printf("------------------------\n");
+
+}*/
 
 
 int main(void)

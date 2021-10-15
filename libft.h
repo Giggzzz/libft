@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/13 18:00:22 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/15 18:46:44 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void*	ft_memset(void *str, int c, size_t len); //no tests
 void	ft_bzero(void *str, size_t len); //no tests
-//void*	ft_memcpy(void *dst, const void *src, size_t len); //nt
-//void*	ft_memmove(void *dst, const void *src, size_t len); //nt
+void*	ft_memcpy(void *dst, const void *src, size_t len); //nt
+void*	ft_memmove(void *dst, const void *src, size_t len); //nt
 /* strlcpy
  * strlcat
  */
@@ -39,23 +39,22 @@ int		ft_tolower(int c);
  * memchr
  * memcmp
  * strnstr*/
-int	ft_atoi(const char *str); //nt
-/* calloc
- * strdup
- */
+int		ft_atoi(const char *str); //nt
+void*	ft_calloc(size_t count, size_t size); //nt
+char*	ft_strdup(const char *str); //nt
  
 // P2
- /* ft_substr
- * ft_strjoin
- * ft_strtrim
- * ft_split
- * ft_itoa
- * ft_strmapi
- * ft_striteri
- * ft_putchar_fd
- * ft_putstr_fd
- * ft_putendl_fd
- * ft_putnbr_fd
- */
+char*	ft_substr(char const *str, unsigned int start, size_t len);
+char*	ft_strjoin(char const *s1, char const *s2);
+char*	ft_strtrim(char const *str,char const *set);
+char**	ft_split(char const *str, char c);
+char*	ft_itoa(int n);
+char*	ft_strmapi(char const *str, char (*f)(unsigned int, char));
+void	ft_striteri(char *str, void (*f)(unsigned int, char*));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *str, int fd);
+void	ft_putendl_fd(char *str, int fd);
+void	ft_putnbr_fd(int n, int fd);
+ 
 #endif
 

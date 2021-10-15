@@ -1,49 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/15 13:16:32 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/15 17:52:23 by gudias           ###   ########.fr       */
+/*   Created: 2021/10/15 16:29:11 by gudias            #+#    #+#             */
+/*   Updated: 2021/10/15 17:26:25 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include<stdio.h>
+//#include<string.h>
 #include "libft.h"
-//#include<stdlib.h>
 
-int	ft_atoi(const char *str)
+void*	ft_memcpy(void *dst, const void *src, size_t len)
 {
-	int	i;
-	int	minus;
-	int	num;
-
-	minus = 1;
-	num = 0;
+	size_t	i;
+	
 	i = 0;
-	while (ft_isspace(str[i]))
-		i++;
-	if (str[i] == '+' || str[i] == '-')
+	while (i < len)
 	{
-		if (str[i] == '-')
-			minus = -1;
-		i++;
-	} 
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		num = (num * 10) + str[i] - '0';
+		((unsigned char*)dst)[i] = ((unsigned char*)src)[i];
 		i++;
 	}
-	return (num * minus);
+	return (dst);
 }
 
 /*int	main(void)
 {
-	char s[] = "       2147483647";
-	if (ft_atoi(s) != atoi(s))
-		printf("%i\n", ft_atoi(s));
+	char s[] = " ";
+	char d[] = "DDD";
 	
+	printf("%s\n", s);
+	printf("%s\n", d);
+	void *p;
+	p = memcpy(d, s, 1);
+	printf("%s\n", d);
 	return (0);
 }*/

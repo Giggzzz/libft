@@ -1,49 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memmove.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/15 13:16:32 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/15 17:52:23 by gudias           ###   ########.fr       */
+/*   Created: 2021/10/15 17:29:11 by gudias            #+#    #+#             */
+/*   Updated: 2021/10/15 18:46:26 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include<stdio.h>
+//#include<string.h>
 #include "libft.h"
-//#include<stdlib.h>
 
-int	ft_atoi(const char *str)
+void*	ft_memmove(void *dst, const void *src, size_t len)
 {
-	int	i;
-	int	minus;
-	int	num;
-
-	minus = 1;
-	num = 0;
-	i = 0;
-	while (ft_isspace(str[i]))
-		i++;
-	if (str[i] == '+' || str[i] == '-')
+	if (src < dst)
 	{
-		if (str[i] == '-')
-			minus = -1;
-		i++;
-	} 
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		num = (num * 10) + str[i] - '0';
-		i++;
+		while (len--)
+			((unsigned char*)dst)[len] = ((unsigned char*)src)[len];
 	}
-	return (num * minus);
+	else
+		ft_memcpy(dst, src, len);
+	return (dst);
 }
 
 /*int	main(void)
 {
-	char s[] = "       2147483647";
-	if (ft_atoi(s) != atoi(s))
-		printf("%i\n", ft_atoi(s));
+	char s[] = "AAAAAAAA";
+	char d[] = "DDD";
 	
+	printf("%s\n", s);
+	printf("%s\n", d);
+	void *p;
+	p = ft_memmove(d, s, 1);
+	printf("%s\n", d);
 	return (0);
 }*/

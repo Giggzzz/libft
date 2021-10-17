@@ -33,9 +33,9 @@ void*	ft_memmove(void *dst, const void *src, size_t len); //nt
  */
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-/* strchr
- * strrchr
- * strncmp
+char*   ft_strchr(const char *str, int c); //nt
+char*   ft_strrchr(const char *str, int c); //nt
+/* strncmp
  * memchr
  * memcmp
  * strnstr*/

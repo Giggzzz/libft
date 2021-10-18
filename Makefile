@@ -6,7 +6,7 @@
 #    By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 13:38:20 by gudias            #+#    #+#              #
-#    Updated: 2021/10/15 18:46:53 by gudias           ###   ########.fr        #
+#    Updated: 2021/10/18 18:42:29 by gudias           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,13 @@ SRCS = ft_isalpha.c \
 	ft_memcpy.c \
 	ft_memmove.c \
 	ft_strchr.c \
-	ft_strrchr.c
+	ft_strrchr.c \
+	ft_memchr.c \
+	ft_strncmp.c \
+	ft_memcmp.c \
+	ft_strnstr.c \
+	ft_strlcpy.c \
+	ft_strlcat.c
 OBJS = ${SRCS:.c=.o}
 HEADER = libft.h
 CC = gcc

@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/15 18:46:44 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/18 18:42:24 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,16 @@ void*	ft_memset(void *str, int c, size_t len); //no tests
 void	ft_bzero(void *str, size_t len); //no tests
 void*	ft_memcpy(void *dst, const void *src, size_t len); //nt
 void*	ft_memmove(void *dst, const void *src, size_t len); //nt
-/* strlcpy
- * strlcat
- */
+size_t	ft_strlcpy(char *dst, const char *src, size_t size); //nt
+size_t	ft_strlcat(char *dst, const char *src, size_t size); //nt
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char*   ft_strchr(const char *str, int c); //nt
 char*   ft_strrchr(const char *str, int c); //nt
-/* strncmp
- * memchr
- * memcmp
- * strnstr*/
+int		ft_strncmp(const char *s1, const char *s2, size_t len); //nt
+void*	ft_memchr(const void *str, int c, size_t len); //nt
+int		ft_memcmp(const void *s1, const void *s2, size_t len); //nt
+char*	ft_strnstr(const char *str, const char *tofind, size_t len); //nt
 int		ft_atoi(const char *str); //nt
 void*	ft_calloc(size_t count, size_t size); //nt
 char*	ft_strdup(const char *str); //nt

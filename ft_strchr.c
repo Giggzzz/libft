@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/18 10:28:05 by gudias            #+#    #+#             */
+/*   Updated: 2021/10/18 10:35:28 by gudias           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 
 char*   ft_strchr(const char *str, int c)
 {
@@ -7,8 +20,8 @@ char*   ft_strchr(const char *str, int c)
   while (str[i] != '\0')
   {
     if (str[i] == c)
-      return (str + i);
+      return ((char*)(str + i));
     i++;
   }
-  return (NULL);
+  return (0);
 }

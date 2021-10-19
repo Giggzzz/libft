@@ -33,7 +33,11 @@ SRCS = ft_isalpha.c \
 	ft_memcmp.c \
 	ft_strnstr.c \
 	ft_strlcpy.c \
-	ft_strlcat.c
+	ft_strlcat.c \
+	ft_putchar_fd.c \
+	ft_putstr_fd.c \
+	ft_putendl_fd.c \
+	ft_putnbr_fd.c
 OBJS = ${SRCS:.c=.o}
 HEADER = libft.h
 CC = gcc

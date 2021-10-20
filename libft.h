@@ -44,8 +44,8 @@ char*	ft_strdup(const char *str); //nt
  
 // P2
 char*	ft_substr(char const *str, unsigned int start, size_t len); //nt
-char*	ft_strjoin(char const *s1, char const *s2);
-char*	ft_strtrim(char const *str,char const *set);
+char*	ft_strjoin(char const *s1, char const *s2); //nt
+char*	ft_strtrim(char const *str,char const *set); //nt
 char**	ft_split(char const *str, char c);
 char*	ft_itoa(int n);
 char*	ft_strmapi(char const *str, char (*f)(unsigned int, char));

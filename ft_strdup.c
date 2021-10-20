@@ -24,7 +24,7 @@ char*	ft_strdup(const char *str)
 	if (!dst)
 		return (NULL);
 	i = 0;
-	while (i <= len)
+	while (i < len)
 	{
 		dst[i] = str[i];
 		i++;

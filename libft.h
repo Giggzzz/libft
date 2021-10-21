@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/18 18:42:24 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/21 19:57:42 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ char*	ft_strdup(const char *str); //nt
 char*	ft_substr(char const *str, unsigned int start, size_t len); //nt
 char*	ft_strjoin(char const *s1, char const *s2); //nt
 char*	ft_strtrim(char const *str,char const *set); //nt
-char**	ft_split(char const *str, char c);
-char*	ft_itoa(int n);
+char**	ft_split(char const *str, char c); //nt
+char*	ft_itoa(int n); //nt
 char*	ft_strmapi(char const *str, char (*f)(unsigned int, char));
 void	ft_striteri(char *str, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd); //nt

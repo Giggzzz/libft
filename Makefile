@@ -6,7 +6,7 @@
 #    By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 13:38:20 by gudias            #+#    #+#              #
-#    Updated: 2021/10/18 18:42:29 by gudias           ###   ########.fr        #
+#    Updated: 2021/10/21 19:56:19 by gudias           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,11 @@ SRCS = ft_isalpha.c \
 	ft_putnbr_fd.c \
 	ft_substr.c \
 	ft_strjoin.c \
-	ft_strtrim.c
+	ft_strtrim.c \
+	ft_itoa.c \
+	ft_split.c \
+	ft_strmapi.c \
+	ft_striteri.c
 OBJS = ${SRCS:.c=.o}
 HEADER = libft.h
 CC = gcc

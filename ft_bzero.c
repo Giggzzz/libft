@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 17:32:07 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/13 17:58:44 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/22 15:51:20 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_bzero(void *str, size_t len)
 	i = 0;
 	while (i < len)
 	{
-		((unsigned char*)str)[i] = '\0';
+		((unsigned char *)str)[i] = '\0';
 		i++;
 	}
 }

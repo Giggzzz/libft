@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 16:29:11 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/15 17:26:25 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/22 17:51:15 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,18 @@
 //#include<string.h>
 #include "libft.h"
 
-void*	ft_memcpy(void *dst, const void *src, size_t len)
+void	*ft_memcpy(void *dst, const void *src, size_t len)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (i < len)
 	{
-		((unsigned char*)dst)[i] = ((unsigned char*)src)[i];
+		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 		i++;
 	}
 	return (dst);
 }
-
 /*int	main(void)
 {
 	char s[] = " ";

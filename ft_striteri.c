@@ -6,14 +6,13 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 12:21:52 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/22 15:23:11 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/22 17:31:46 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-void    ft_striteri(char *str, char (*f)(unsigned int, char*))
+void	ft_striteri(char *str, char (*f)(unsigned int, char*))
 {
-	unsigned int   i;
+	unsigned int	i;
 
 	if (str && f)
 	{

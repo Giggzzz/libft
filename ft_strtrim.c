@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/22 17:41:55 by gudias            #+#    #+#             */
+/*   Updated: 2021/10/22 17:54:01 by gudias           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include<stdlib.h>
 #include "libft.h"
@@ -16,15 +27,15 @@ static int	is_totrim(char c, char const *set)
 	return (0);
 }
 
-char*	ft_strtrim(char const *str, char const *set)
+char	*ft_strtrim(char const *str, char const *set)
 {
 	char	*res;
-	int	len;
+	int		len;
 
 	if (!str || !set)
-		return (NULL);	
+		return (NULL);
 	while (is_totrim(*str, set))
-		str++; 
+		str++;
 	len = ft_strlen(str);
 	while (is_totrim(str[len - 1], set))
 		len--;

@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 13:16:32 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/22 12:21:23 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/22 15:50:04 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	minus;
+	int			i;
+	int			minus;
 	long int	num;
 
 	minus = 1;
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 		if (str[i] == '-')
 			minus = -1;
 		i++;
-	} 
+	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		num = (num * 10) + str[i] - '0';
@@ -43,11 +43,10 @@ int	ft_atoi(const char *str)
 	}
 	return ((num * minus));
 }
-
-int	main(void)
+/*int	main(void)
 {
 	char s[] = "       -2143928375934864989675448674986774836493";
 	printf("atoi: %d ft_atoi: %d\n", atoi(s), ft_atoi(s));
 	
 	return (0);
-}
+}*/

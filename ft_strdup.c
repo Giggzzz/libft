@@ -6,19 +6,19 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 15:59:27 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/15 16:20:26 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/22 16:37:36 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include<stdlib.h>
 
-char*	ft_strdup(const char *str)
+char	*ft_strdup(const char *str)
 {
 	int		len;
 	int		i;
-	char*	dst;
-	
+	char	*dst;
+
 	len = ft_strlen(str);
 	dst = malloc(sizeof (char) * len + 1);
 	if (!dst)

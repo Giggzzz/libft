@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 17:24:30 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/18 18:43:51 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/22 17:35:22 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	src_len;
 	size_t	i;
 
-	if(!src || !dst)
+	if (!src || !dst)
 		return (0);
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);

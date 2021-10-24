@@ -40,7 +40,7 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	char s1[] = "0123456789";
 	
 	char *s2;
-	s2 = ft_substr(s1, 8, 5);
+	s2 = ft_substr(s1, 9, 0);
 	ft_putstr_fd(s2,1);
 		return (0);
 }*/

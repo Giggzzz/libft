@@ -15,17 +15,19 @@
 char	*ft_strmapi(char const *str, char (*f)(unsigned int, char))
 {
 	char	*newstring;
+	int		i;
 
 	if (!str || !f)
 		return (NULL);
 	newstring = ft_strdup(str);
-	ft_striteri(newstring, (void *)f);
-	return (newstring);
-}
-/*i = 0;
+	if (!newstring)
+		return (NULL);
+	i = 0;
 	while (str[i])
 	{
 		newstring[i] = f(i, str[i]);
 		i++;
 	}
-	str[i] = '\0';*/
+	newstring[i] = '\0';
+	return (newstring);
+}

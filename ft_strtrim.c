@@ -36,9 +36,14 @@ char	*ft_strtrim(char const *str, char const *set)
 		return (NULL);
 	while (is_totrim(*str, set))
 		str++;
-	len = ft_strlen(str);
-	while (is_totrim(str[len - 1], set))
-		len--;
+	if (*str == '\0')
+		len = 0;
+	else
+	{
+		len = ft_strlen(str);
+		while (is_totrim(str[len - 1], set))
+			len--;
+	}
 	res = malloc(sizeof (char) * (len + 1));
 	if (!res)
 		return (NULL);

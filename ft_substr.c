@@ -19,7 +19,7 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	size_t	i;
 
 	if (ft_strlen(str) < start)
-		return (NULL);
+		start = ft_strlen(str);
 	if (ft_strlen(str) - start < len)
 		len = ft_strlen(str) - start;
 	res = malloc (sizeof (char) * (len + 1));
@@ -37,10 +37,10 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 
 /*int	main()
 {
-	char s1[] = "0123456789";
+	char s1[] = "tripouille";
 	
 	char *s2;
-	s2 = ft_substr(s1, 9, 0);
+	s2 = ft_substr(s1, 100, 1);
 	ft_putstr_fd(s2,1);
 		return (0);
 }*/

@@ -38,6 +38,8 @@ char	**ft_split(char const *str, char c)
 	int		start;
 	int		w_count;
 
+	if (!str)
+		return (NULL);
 	w_count = count_words(str, c);
 	i = 0;
 	res = malloc (sizeof (char *) * (w_count + 1));

@@ -5,7 +5,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*next;
 	t_list	*list;
 
-	if (lst && del)
+	if (lst)
 	{
 		list = *lst;
 		while (list)

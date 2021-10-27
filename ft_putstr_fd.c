@@ -6,12 +6,11 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 16:33:45 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/22 16:34:34 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/27 13:55:46 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
-//#include<fcntl.h>
 
 void	ft_putstr_fd(char *str, int fd)
 {	
@@ -23,23 +22,3 @@ void	ft_putstr_fd(char *str, int fd)
 		str++;
 	}
 }
-
-/*int	main()
-{
-	int	fd;
-
-	fd = open("test.txt", O_CREAT | O_WRONLY | O_APPEND);
-	if (fd == -1)
-	{
-		write (1, "FAIL\n", 5);
-		return (0);
-	}
-	ft_putstr_fd("HELLO WORLD", fd);
-	if (close(fd) == -1)
-	{
-		write(1, "close error\n", 12);
-		return (0);
-	}
-	write (1, "OK\n", 3);
-	return (0);
-}*/

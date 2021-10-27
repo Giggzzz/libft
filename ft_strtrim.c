@@ -6,11 +6,10 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 17:41:55 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/22 17:54:01 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/27 13:58:18 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
 #include "libft.h"
 
 static int	is_totrim(char c, char const *set)
@@ -50,14 +49,3 @@ char	*ft_strtrim(char const *str, char const *set)
 	ft_strlcpy(res, str, len + 1);
 	return (res);
 }
-
-/*int	main(void)
-{
-	char s[] = "     *    HELL*O     #";
-	char set[] = " *#";
-
-	char *new;
-	new = ft_strtrim(s, set);
-	ft_putstr_fd(new, 1);
-	return (0);
-}*/

@@ -6,13 +6,11 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/21 16:54:12 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/21 17:27:23 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/27 13:44:02 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include<stdio.h>
-#include<stdlib.h>
-//#include<limits.h>
+#include "libft.h"
 
 static int	ft_intlen(int n)
 {
@@ -60,13 +58,3 @@ char	*ft_itoa(int n)
 	}
 	return (res);
 }
-/*int main()
-{
-    char *str;
-    int n;
-
-    n = INT_MIN;
-    str = ft_itoa(n);
-    printf("%d %s", n, str);
-    return 0;
-}*/

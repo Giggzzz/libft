@@ -6,11 +6,10 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 17:46:31 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/22 17:54:23 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/27 13:58:39 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *str, unsigned int start, size_t len)
@@ -36,13 +35,3 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	res[i] = '\0';
 	return (res);
 }
-
-/*int	main()
-{
-	char s1[] = "tripouille";
-	
-	char *s2;
-	s2 = ft_substr(s1, 100, 1);
-	ft_putstr_fd(s2,1);
-		return (0);
-}*/

@@ -6,13 +6,11 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 17:32:07 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/22 15:51:20 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/27 13:42:36 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include<stdio.h>
-//#include<string.h>
 
 void	ft_bzero(void *str, size_t len)
 {
@@ -25,12 +23,3 @@ void	ft_bzero(void *str, size_t len)
 		i++;
 	}
 }
-
-/*int	main(void)
-{
-	char str[] = "bli bla blu";
-	printf("%s\n", str);	
-	ft_bzero(str, 3);
-	printf("%s\n", str);
-	return (0);
-}*/

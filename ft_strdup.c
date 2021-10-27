@@ -6,12 +6,11 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 15:59:27 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/22 16:37:36 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/27 13:56:30 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include<stdlib.h>
 
 char	*ft_strdup(const char *str)
 {

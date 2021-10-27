@@ -6,11 +6,10 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 17:32:01 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/22 17:52:54 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/27 13:57:29 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -45,15 +44,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	res[i] = '\0';
 */
-/*int	main()
-{
-	char s[] = "THIS is a 28943hdfb STing ";
-	char str[] = "anoteh";
-	char *s3;
-
-	ft_putendl_fd(s, 1);
-	ft_putendl_fd(str, 1);
-	s3 = ft_strjoin(s, str);
-	ft_putendl_fd(s3, 1);
-	return (0);
-}*/

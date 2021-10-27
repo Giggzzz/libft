@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/22 18:16:21 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/27 12:28:22 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 # include<stddef.h>
 # include<stdlib.h>
 
-typedef struct	s_list
+typedef struct s_list
 {
-	void		*content;
+	void			*content;
 	struct s_list	*next;
-}		t_list;
+}				t_list;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 15:56:19 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/18 18:52:31 by gudias           ###   ########.fr       */
+/*   Updated: 2021/10/27 12:25:27 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
-	//if (!src || !dst)
-	//	return (0);
 	i = 0;
 	if (size > 0)
 	{

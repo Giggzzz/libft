@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/27 12:28:22 by gudias           ###   ########.fr       */
+/*   Updated: 2022/01/14 17:38:44 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include<stddef.h>
 # include<stdlib.h>
+# include "ft_printf/ft_printf.h"
 
 typedef struct s_list
 {

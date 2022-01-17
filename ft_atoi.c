@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 13:16:32 by gudias            #+#    #+#             */
-/*   Updated: 2021/10/27 12:54:10 by gudias           ###   ########.fr       */
+/*   Updated: 2022/01/17 04:14:49 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_atoi(const char *str)
 	{
 		num = (num * 10) + str[i] - '0';
 		if (num * minus > 2147483647)
-			return (-1);
+			return (0);
 		else if (num * minus < -2147483648)
 			return (0);
 		i++;

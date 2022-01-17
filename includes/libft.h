@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2022/01/14 20:13:18 by gudias           ###   ########.fr       */
+/*   Updated: 2022/01/17 19:48:24 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 # include<stddef.h>
 # include<stdlib.h>
-# include "ft_printf/ft_printf.h"
+# include "../ft_printf/ft_printf.h"
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
 # endif
@@ -57,6 +57,10 @@ char	**ft_split(char const *str, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *str, char (*f)(unsigned int, char));
 void	ft_striteri(char *str, void (*f)(unsigned int, char*));
+void	ft_putchar(char c);
+void	ft_putstr(char *str);
+void	ft_putendl(char *str);
+void	ft_putnbr(int n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *str, int fd);

@@ -6,7 +6,7 @@
 #    By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 13:38:20 by gudias            #+#    #+#              #
-#    Updated: 2022/01/14 20:11:12 by gudias           ###   ########.fr        #
+#    Updated: 2022/01/17 19:47:11 by gudias           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,12 +20,13 @@ ft_strjoin.c ft_strtrim.c ft_itoa.c ft_split.c ft_strmapi.c ft_striteri.c \
 ft_printf/ft_printf.c ft_printf/get_flags.c ft_printf/print.c \
 ft_printf/print_format.c ft_printf/putters_count.c \
 \
-ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c 
+lst/ft_lstnew.c lst/ft_lstadd_front.c lst/ft_lstsize.c lst/ft_lstlast.c \
+lst/ft_lstadd_back.c lst/ft_lstdelone.c lst/ft_lstclear.c lst/ft_lstiter.c lst/ft_lstmap.c \
+ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c
  
 OBJS = ${SRCS:.c=.o}
 
-HEADER = libft.h
+INCS = includes
 
 CC = gcc
 
@@ -34,7 +35,7 @@ CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 
 .c.o:
-		${CC} ${CFLAGS} -I . -c $< -o ${<:.c=.o}
+		${CC} ${CFLAGS} -I $(INCS) -c $< -o ${<:.c=.o}
 
 all: ${NAME}
 

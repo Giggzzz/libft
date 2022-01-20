@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/19 23:23:51 by gudias            #+#    #+#             */
-/*   Updated: 2022/01/20 01:59:01 by gudias           ###   ########.fr       */
+/*   Updated: 2022/01/20 02:51:34 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,11 @@ int	ft_isnumber(char *str)
 		return (0);
 	if ((*str == '+' || *str == '-') && *(str + 1))
 		str++;
-	
 	while (*str)
 	{
 		if (!ft_isdigit(*str))
 			return (0);
-		str++;	
+		str++;
 	}
 	return (1);
 }

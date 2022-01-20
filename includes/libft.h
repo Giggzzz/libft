@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2022/01/20 01:36:04 by gudias           ###   ########.fr       */
+/*   Updated: 2022/01/20 02:50:28 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
 # endif
+
+typedef enum e_bool
+{
+	TRUE = 1,
+	FALSE = 0;
+}		t_bool;
 
 typedef struct s_list
 {

@@ -6,7 +6,7 @@
 #    By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 13:38:20 by gudias            #+#    #+#              #
-#    Updated: 2022/01/19 21:42:21 by gudias           ###   ########.fr        #
+#    Updated: 2022/01/20 01:56:01 by gudias           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ $(addprefix checks/, \
 	ft_isdigit.c \
 	ft_isalnum.c \
 	ft_isascii.c \
-	ft_isprint.c )\
+	ft_isprint.c \
+	ft_isnumber.c )\
 \
 $(addprefix strings/, \
 	ft_strlen.c \

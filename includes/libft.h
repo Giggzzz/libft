@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2022/01/18 02:58:29 by gudias           ###   ########.fr       */
+/*   Updated: 2022/01/20 01:36:04 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 # include<stddef.h>
 # include<stdlib.h>
-# include "../srcs/print/ft_printf/ft_printf.h"
+# include "ft_printf.h"
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
 # endif
@@ -31,6 +31,7 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
+int		ft_isnumber(char *str);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *str, int c, size_t len);
 void	ft_bzero(void *str, size_t len);

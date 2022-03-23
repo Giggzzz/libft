@@ -6,7 +6,7 @@
 #    By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 13:38:20 by gudias            #+#    #+#              #
-#    Updated: 2022/03/23 18:08:01 by gudias           ###   ########.fr        #
+#    Updated: 2022/03/23 23:49:34 by gudias           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -92,20 +92,31 @@ $(addprefix memory/, \
 OBJS	= ${SRCS:%.c=$(OBJSDIR)/%.o}
 
 $(OBJSDIR)/%.o: srcs/%.c 
-		mkdir -p $(OBJSDIR) $(addprefix $(OBJSDIR)/, $(SUBDIRS))
-		${CC} ${CFLAGS} -I $(INCSDIR) -c $< -o $@
+		@echo "$(YELLOW)Compiling $(DEFAULT)$<"
+		@mkdir -p $(OBJSDIR) $(addprefix $(OBJSDIR)/, $(SUBDIRS))
+		@${CC} ${CFLAGS} -I $(INCSDIR) -c $< -o $@
 
 all: ${NAME}
 
 ${NAME}: ${OBJS}
-		$(AR) ${NAME} $^
+		@echo "$(YELLOW)Creating lib..$(DEFAULT)"
+		@$(AR) ${NAME} $^
+		@echo "$(GREEN)---> $@ is ready$(DEFAULT)"
 
 clean:
-		$(RM) -r ${OBJSDIR}
+		@$(RM) -r ${OBJSDIR}
+		@echo "$(RED)!! Object files deleted !!$(DEFAULT)"
 
 fclean: clean
-		$(RM) ${NAME}
+		@$(RM) ${NAME}
+		@echo "$(RED)!! $(NAME) deleted !!$(DEFAULT)"
 
 re: fclean all
 
 .PHONY: all clean fclean re
+
+#COLORS
+RED = \033[1;31m
+GREEN = \033[1;32m
+YELLOW = \033[1;33m
+DEFAULT = \033[0m

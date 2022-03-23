@@ -6,7 +6,7 @@
 #    By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 13:38:20 by gudias            #+#    #+#              #
-#    Updated: 2022/03/23 23:49:34 by gudias           ###   ########.fr        #
+#    Updated: 2022/03/23 23:56:54 by gudias           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,7 @@ $(addprefix strings/, \
 	ft_strncmp.c \
 	ft_strlcat.c \
 	ft_strjoin.c \
+	ft_pathjoin.c \
 	ft_strtrim.c \
 	ft_substr.c \
 	ft_split.c \

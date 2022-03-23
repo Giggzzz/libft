@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2022/03/23 18:06:08 by gudias           ###   ########.fr       */
+/*   Updated: 2022/03/23 23:56:13 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *str);
 char	*ft_substr(char const *str, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_pathjoin(char *s1, char *s2);
 char	*ft_strtrim(char const *str, char const *set);
 char	**ft_split(char const *str, char c);
 char	*ft_itoa(int n);

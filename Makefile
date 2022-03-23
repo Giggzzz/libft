@@ -6,7 +6,7 @@
 #    By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/11 13:38:20 by gudias            #+#    #+#              #
-#    Updated: 2022/01/20 01:56:01 by gudias           ###   ########.fr        #
+#    Updated: 2022/03/23 18:08:01 by gudias           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,6 +63,7 @@ $(addprefix memory/, \
 	ft_calloc.c )\
 \
 	files/get_next_line.c \
+	files/openfile.c \
 \
 	print/ft_putchar.c \
 	print/ft_putstr.c \

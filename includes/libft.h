@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/11 13:26:31 by gudias            #+#    #+#             */
-/*   Updated: 2022/04/26 21:22:08 by gudias           ###   ########.fr       */
+/*   Updated: 2022/05/21 00:07:10 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # include<stddef.h>
 # include<stdlib.h>
+# include "colors.h"
 # include "ft_printf.h"
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
